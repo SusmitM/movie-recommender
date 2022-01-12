@@ -30,7 +30,7 @@ function App() {
   const [selectedTopic,setTopic] = useState("Action");
   function clickHandler(topic){
       setTopic(topic);
-      console.log(selectedTopic);
+     
    }
   
   return (
@@ -41,7 +41,17 @@ function App() {
      </div>
      <div className="btnList">
        {Object.keys(movieDB).map((topic) =>(<button onClick={ () => clickHandler(topic)}>{topic}</button>))}
-       
+     </div>
+     <div className="listOutput">
+       <ul>
+         {movieDB[selectedTopic].map((movie)=>(
+           <li>
+             <div>{movie.Name}</div>
+             <div>{movie.rating}</div>
+
+           </li>
+         ))}
+       </ul>
      </div>
     </div>
   );
