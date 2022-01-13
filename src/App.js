@@ -39,13 +39,13 @@ function App() {
       <div className="Header">
      <h1>Movie Recommender</h1>
      </div>
-     <div className="btnList">
-       {Object.keys(movieDB).map((topic) =>(<button onClick={ () => clickHandler(topic)}>{topic}</button>))}
+     <div>
+       {Object.keys(movieDB).map((topic) =>(<button className="btn" onClick={ () => clickHandler(topic)}>{topic} </button>))}
      </div>
-     <div className="listOutput">
+     <div >
        <ul>
          {movieDB[selectedTopic].map((movie)=>(
-           <li>
+           <li className="listOutput">
              <div>{movie.Name}</div>
              <div>{movie.rating}</div>
 
