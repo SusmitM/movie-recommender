@@ -1,8 +1,9 @@
 :root {
   --primary-color: #111111;
-  --secondary-color:white;
+  --secondary-color: white;
 }
-body{
+
+body {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   font-family: Helvetica;
@@ -12,22 +13,19 @@ body{
 .App {
   text-align: center;
 }
-.Header{
+
+.Header {
   font-size: x-large;
   text-shadow: 5px 10px 10px rgba(143, 12, 175, 1);
-color: white;
-margin-top: 3rem;
+  color: white;
 }
 
 .btn {
-  font-size: larger;
-  padding:1rem;
-  margin:0.75rem;
+  margin: 0.75rem;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
   color: white;
-  
   font-size: 18px;
   font-weight: 100;
   padding: 15px;
@@ -41,6 +39,7 @@ margin-top: 3rem;
   cursor: pointer;
   text-align: center;
 }
+
 .btn:hover {
   background: #000000;
   border: inset #DD380D 2px;
@@ -49,13 +48,15 @@ margin-top: 3rem;
   border-radius: 3px;
   text-decoration: none;
 }
-.listOutput{
-  font-size: 30px;
-border: 10px inset #8f0caf;
-border-radius: 2px;
-margin: 2.5rem;
-padding: 0.75rem;
-box-shadow: 7px -1px 7px rgba(143, 12, 175, 0.9);
-text-align: left;
 
+.listOutput {
+  border: 10px inset #8f0caf;
+  border-radius: 2px;
+  margin: 2.5rem;
+  padding: 0.75rem;
+  box-shadow: 7px -1px 7px rgba(143, 12, 175, 0.9);
+  text-align: left;
+  font-weight: bolder;
+  font-size: 25px;
+  list-style-type: none;
 }
