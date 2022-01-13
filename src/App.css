@@ -50,13 +50,28 @@ body {
 }
 
 .listOutput {
+  height: fit-content;
   border: 10px inset #8f0caf;
   border-radius: 2px;
   margin: 2.5rem;
   padding: 0.75rem;
   box-shadow: 7px -1px 7px rgba(143, 12, 175, 0.9);
   text-align: left;
-  font-weight: bolder;
-  font-size: 25px;
   list-style-type: none;
+}
+.nameDiv{
+  font-weight: bolder;
+  font-size: 30px;
+  margin-bottom: 1.2rem;
+
+}
+.ratingDiv{
+  font-weight: bold;
+  font-size: medium;
+}
+.imgDiv{
+  display:block;
+  margin-left:auto;
+  margin-right: 2rem;
+  border: 0.25px solid #8f0caf;
 }

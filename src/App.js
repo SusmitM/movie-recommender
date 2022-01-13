@@ -9,13 +9,13 @@ import action2 from './images/lord of rings.jpg';
 const movieDB = {
   Action :
   [
-    { Name: "The Dark Knight (2008)", rating: "9/10", image:action1 },
-    { Name:"The Lord of the Rings: The Return of the King (2003)" , rating:"8.9/10", image:action2 }
+    { Name: "The Dark Knight (2008)", rating: "⭐⭐⭐⭐⭐ /  5⭐", image:action1 },
+    { Name:"The Lord of the Rings: The Return of the King (2003)" , rating:"⭐⭐⭐⭐ / 5⭐", image:action2 }
 
   ],
   Comedy:
   [
-    { Name: "The Chaos Class (1975)", rating: "9.3/10" },
+    { Name: "The Chaos Class (1975)", rating: "⭐⭐⭐⭐ / 5⭐" },
     { Name:"Parasite (2019)", rating:"8.6/10" }
 
   ],
@@ -46,15 +46,13 @@ function App() {
        {Object.keys(movieDB).map((topic) =>(<button className="btn" onClick={ () => clickHandler(topic)}>{topic} </button>))}
      </div>
      <div >
-       <ul>
+       <ul >
          {movieDB[selectedTopic].map((movie)=>(
            <li className="listOutput">
-             <div className="txt">{movie.Name}</div>
-             <div className="rat">{movie.rating}</div>
-            <img src={movie.image} height={150} width={100} />
-             
-      
-
+             <div className="nameDiv">{movie.Name}</div>
+             <div className="ratingDiv">{movie.rating} <img className="imgDiv" src={movie.image} height={200} width={170}  />
+      </div>
+           
            </li>
          ))}
        </ul>
