@@ -3,6 +3,10 @@ import './App.css';
 import { useState } from "react";
 import action1 from './images/Dark Knight.jpg';
 import action2 from './images/lord of rings.jpg';
+import comedy1 from './images/The chaos.jpg';
+import comedy2 from './images/parasite.jpg';
+import sci1 from './images/inception.jpg';
+import sci2 from './images/spiderman.jpg';
 
 
 
@@ -15,15 +19,15 @@ const movieDB = {
   ],
   Comedy:
   [
-    { Name: "The Chaos Class (1975)", rating: "⭐⭐⭐⭐ / 5⭐" },
-    { Name:"Parasite (2019)", rating:"8.6/10" }
+    { Name: "The Chaos Class (1975)", rating: "⭐⭐⭐⭐⭐ / 5⭐", image:comedy1  },
+    { Name:"Parasite (2019)", rating:"⭐⭐⭐⭐ / 5⭐", image:comedy2  }
 
   ],
 
   SciFi:
   [
-    { Name: "Inception (2010)", rating: "8.8/10" },
-    { Name:"Spider-Man: No Way Home (2021)" , rating:"8.8/10" }
+    { Name: "Inception (2010)", rating: "⭐⭐⭐⭐⭐ / 5⭐", image:sci1  },
+    { Name:"Spider-Man: No Way Home (2021)" , rating:"⭐⭐⭐⭐ / 5⭐", image:sci2  }
 
   ]
 
