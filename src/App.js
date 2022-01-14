@@ -52,7 +52,7 @@ const movieDB = {
 
 function App() {
   const [selectedTopic,setTopic] = useState("Action");
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   function clickHandler(topic){
       setTopic(topic);
      
@@ -89,6 +89,7 @@ function App() {
          ))}
        </ul>
      </div>
+     <h3>Made with ❤️ by Susmit </h3>
     </div>
     
   );

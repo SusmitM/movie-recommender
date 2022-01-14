@@ -1,29 +1,30 @@
-
-html, body { height: 100%; }
-#page { height: 100% }
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
 
 .dark {
-  display: block;
+  width: 100%;
   height: 100%;
   font-family: Helvetica;
   text-align: center;
-  background-color: #111111;
+  background: #111111;
   color: white;
-  --div-background:rgba(143, 12, 175, 1);
-  --btn-border:#DD380D;
-  transition: background-color 0.25s ease-in-out;
+  --div-background: rgba(143, 12, 175, 1);
+  --btn-border: #DD380D;
 
 }
 
 .light {
+  margin: auto;
   font-family: Helvetica;
   text-align: center;
   background-color: white;
   color: black;
-  --div-background:rgba(247, 104, 81, 0.9);
-  --btn-border:#DD380D;
-  height: 100%;
-  transition: background-color 0.25s ease-in-out;
+  --div-background: rgba(247, 104, 81, 0.9);
+  --btn-border:#000080;
 }
 
 * {
@@ -31,7 +32,9 @@ html, body { height: 100%; }
   margin: 0px;
   padding: 0px;
 }
+
 .container {
+  margin: auto;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -89,15 +92,15 @@ html, body { height: 100%; }
   transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #19a2c1;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #2196f3;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -111,6 +114,7 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
 .switch-checkbox {
   padding: 10px;
 }
@@ -120,7 +124,7 @@ input:checked + .slider:before {
   text-shadow: 5px 10px 10px var(--div-background);
   color: var(--text-color);
   text-align: center;
-  font-family: Helvetica;
+  margin: auto;
 
 }
 
@@ -164,19 +168,22 @@ input:checked + .slider:before {
   text-align: left;
   list-style-type: none;
 }
-.nameDiv{
+
+.nameDiv {
   font-weight: bolder;
   font-size: 30px;
   margin-bottom: 1.2rem;
 
 }
-.ratingDiv{
+
+.ratingDiv {
   font-weight: bold;
   font-size: medium;
 }
-.imgDiv{
-  display:block;
-  margin-left:auto;
+
+.imgDiv {
+  display: block;
+  margin-left: auto;
   margin-right: 2rem;
   border: 0.25px solid var(--div-background);
 }
