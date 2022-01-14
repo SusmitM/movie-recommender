@@ -52,16 +52,27 @@ const movieDB = {
 
 function App() {
   const [selectedTopic,setTopic] = useState("Action");
+  const [darkMode, setDarkMode] = useState(false);
   function clickHandler(topic){
       setTopic(topic);
      
    }
   
   return (
-    <div className="App">
+      
 
-      <div className="Header">
-     <h1>Movie Recommender</h1>
+      <div className={darkMode ? "dark" : "light"}>
+         <h1 className="Header">Movie Recommender</h1>
+       <div className="container">
+        <span style={{ color: darkMode ? "grey" : "yellow" }}>☀︎</span>
+        <div className="switch-checkbox">
+          <label className="switch">
+            <input type="checkbox" onChange={() => setDarkMode(!darkMode)} />
+            <span className="slider round"> </span>
+          </label>
+        </div>
+        <span style={{ color: darkMode ? "#c96dfd" : "grey" }}>☽</span>
+    
      </div>
      <div className="btnDiv">
        {Object.keys(movieDB).map((topic) =>(<button className="btn" onClick={ () => clickHandler(topic)}>{topic} </button>))}
@@ -79,6 +90,7 @@ function App() {
        </ul>
      </div>
     </div>
+    
   );
 }
 

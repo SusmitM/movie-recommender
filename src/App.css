@@ -1,25 +1,127 @@
-:root {
-  --background-color: #111111;
-  --text-color: white;
+
+html, body { height: 100%; }
+#page { height: 100% }
+
+.dark {
+  display: block;
+  height: 100%;
+  font-family: Helvetica;
+  text-align: center;
+  background-color: #111111;
+  color: white;
   --div-background:rgba(143, 12, 175, 1);
   --btn-border:#DD380D;
+  transition: background-color 0.25s ease-in-out;
+
 }
 
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
+.light {
   font-family: Helvetica;
+  text-align: center;
+  background-color: white;
+  color: black;
+  --div-background:rgba(247, 104, 81, 0.9);
+  --btn-border:#DD380D;
+  height: 100%;
+  transition: background-color 0.25s ease-in-out;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 100%;
+  margin-right: 5rem;
+}
 
-.App {
-  text-align: center;
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 14px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #19a2c1;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.switch-checkbox {
+  padding: 10px;
 }
 
 .Header {
-  font-size: x-large;
+  font-size: 4rem;
   text-shadow: 5px 10px 10px var(--div-background);
   color: var(--text-color);
+  text-align: center;
+  font-family: Helvetica;
+
 }
 
 .btn {
