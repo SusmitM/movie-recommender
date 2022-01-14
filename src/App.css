@@ -1,11 +1,13 @@
 :root {
-  --primary-color: #111111;
-  --secondary-color: white;
+  --background-color: #111111;
+  --text-color: white;
+  --div-background:rgba(143, 12, 175, 1);
+  --btn-border:#DD380D;
 }
 
 body {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-family: Helvetica;
 }
 
@@ -16,24 +18,25 @@ body {
 
 .Header {
   font-size: x-large;
-  text-shadow: 5px 10px 10px rgba(143, 12, 175, 1);
-  color: white;
+  text-shadow: 5px 10px 10px var(--div-background);
+  color: var(--text-color);
 }
 
 .btn {
-  margin: 0.75rem;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
-  color: white;
+  color: var(--text-color);
   font-size: 18px;
   font-weight: 100;
   padding: 15px;
-  background-color: #000000;
-  -webkit-box-shadow: 2px 2px 5px 2px #8F0CAF;
-  -moz-box-shadow: 2px 2px 5px 2px #8F0CAF;
-  box-shadow: 2px 2px 5px 2px #8F0CAF;
-  border: inset #8F0CAF 2px;
+  background-color: var(--background-color);
+  -webkit-box-shadow: 2px 2px 5px 2px var(--div-background);
+  -moz-box-shadow: 2px 2px 5px 2px var(--div-background);
+  box-shadow: 2px 2px 5px 2px var(--div-background);
+  border: inset var(--div-background) 2px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -41,8 +44,8 @@ body {
 }
 
 .btn:hover {
-  background: #000000;
-  border: inset #DD380D 2px;
+  background: var(--background-color);
+  border: inset var(--btn-border)2px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -51,11 +54,11 @@ body {
 
 .listOutput {
   height: fit-content;
-  border: 10px inset #8f0caf;
+  border: 10px inset var(--div-background);
   border-radius: 2px;
-  margin: 2.5rem;
+  margin: 2rem;
   padding: 0.75rem;
-  box-shadow: 7px -1px 7px rgba(143, 12, 175, 0.9);
+  box-shadow: 7px -1px 7px var(--div-background);
   text-align: left;
   list-style-type: none;
 }
@@ -73,5 +76,5 @@ body {
   display:block;
   margin-left:auto;
   margin-right: 2rem;
-  border: 0.25px solid #8f0caf;
+  border: 0.25px solid var(--div-background);
 }

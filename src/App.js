@@ -7,6 +7,10 @@ import comedy1 from './images/The chaos.jpg';
 import comedy2 from './images/parasite.jpg';
 import sci1 from './images/inception.jpg';
 import sci2 from './images/spiderman.jpg';
+import crime1 from './images/crime1.jpg';
+import crime2 from './images/crime2.jpg';
+import rom1 from './images/rom1.jpg';
+import rom2 from './images/rom2.jpg';
 
 
 
@@ -17,12 +21,25 @@ const movieDB = {
     { Name:"The Lord of the Rings: The Return of the King (2003)" , rating:"⭐⭐⭐⭐ / 5⭐", image:action2 }
 
   ],
+  Crime :
+  [
+    { Name: "Jai Bhim (2021)", rating: "⭐⭐⭐⭐⭐ /  5⭐", image:crime1 },
+    { Name:"The Godfather (1972)" , rating:"⭐⭐⭐⭐ / 5⭐", image:crime2 }
+
+  ],
   Comedy:
   [
     { Name: "The Chaos Class (1975)", rating: "⭐⭐⭐⭐⭐ / 5⭐", image:comedy1  },
     { Name:"Parasite (2019)", rating:"⭐⭐⭐⭐ / 5⭐", image:comedy2  }
 
   ],
+  Romance:
+  [
+    { Name: "The French Dispatch (2021)", rating: "⭐⭐⭐⭐⭐ / 5⭐", image:rom1  },
+    { Name:" Titanic (1997)" , rating:"⭐⭐⭐⭐ / 5⭐", image:rom2  }
+
+  ],
+  
 
   SciFi:
   [
