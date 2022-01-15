@@ -61,7 +61,7 @@ function App() {
   return (
       
 
-      <div className={darkMode ? "dark" : "light"}>
+      <div width="100vh" className={darkMode ? "dark" : "light"}>
          <h1 className="Header">Movie Recommender</h1>
        <div className="container">
         <span style={{ color: darkMode ? "grey" : "yellow" }}>☀︎</span>
